@@ -1,14 +1,15 @@
 import React from 'react'
 import Greeting from './components/Greeting'
-import ProductInfo from './components/ProductInfo'
+import Add from './components/Add'
 
 const App = () => {
   return (
-    <div>
-        
-       <Greeting/>
-       <ProductInfo/>
-    </div>
+    <>
+      <h1> <Add/></h1> 
+       <h3> <Greeting/></h3>
+    </>
+    
+
   )
 }
 
