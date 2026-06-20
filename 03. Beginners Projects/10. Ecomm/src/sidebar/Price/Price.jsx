@@ -1,15 +1,24 @@
 import React from 'react'
 import Input from '../../components/Input'
 
-const Price = () => {
+const Price = ({handleChange}) => {
+   
   return (
     <div className='ml-18'>
       <h2 className='text-md py-2 font-semibold font-serif'>Price</h2>
       <div className='font-serif text-md text-gray-700  '>
-       <Input/>
-       <Input/>
-       <Input/>
-       <Input/> 
+        <div>
+          <Input name="price" handleChange={handleChange} value={50} title={"$0-50"}/>
+        </div>
+        <div>
+           <Input name="price" handleChange={handleChange}  value={100} title={"$50-100"}/>
+        </div>
+        <div>
+           <Input name="price" handleChange={handleChange}  value={150} title={"$100-150"}/>
+        </div>
+        <div>
+           <Input name="price" handleChange={handleChange}  value={200} title={"Over $200"} /> 
+        </div>
       </div>
 
     </div>
